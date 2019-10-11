@@ -7,6 +7,7 @@ Author: 骆昊
 Date: 2018-03-12
 """
 
+
 class Father(object):
 
     def __init__(self, name):
@@ -42,19 +43,21 @@ class Musician(object):
     def play_piano(self):
         print('%s在弹钢琴.' % self._name)
 
-class Son(Father,Monk,Musician):
-    def __init__(self,name):
+
+class Son(Father, Monk, Musician):
+    def __init__(self, name):
         super().__init__(name)
-        Father.__init__(self,name)
-        Monk.__init__(self,name)
-        Musician.__init__(self,name)
+        Father.__init__(self, name)
+        Monk.__init__(self, name)
+        Musician.__init__(self, name)
+
     def su(self):
-        super(Son,self).eat()
-        super(Monk,self).eat()
-        super(Father,self).eat()
+        super(Son, self).eat()
+        super(Monk, self).eat()
+        super(Father, self).eat()
+
+
 #        super(Musician,self).eat()
-
-
 
 
 if __name__ == '__main__':
