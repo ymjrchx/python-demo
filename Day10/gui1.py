@@ -20,7 +20,7 @@ def main():
     def change_label_text():
         nonlocal flag
         flag = not flag
-        color, msg = ('red', 'Hello, world!')\
+        color, msg = ('red', 'Hello, world!') \
             if flag else ('blue', 'Goodbye, world!')
         label.config(text=msg, fg=color)
 
